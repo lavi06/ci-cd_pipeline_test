@@ -13,7 +13,7 @@ jobs:
 
     steps:
       - name: Generate environment variable file
-        run: python3 generate_env_vars.py
+        run: python3 convert_env.py
 
       - name: Checkout the files
         uses: actions/checkout@v2
