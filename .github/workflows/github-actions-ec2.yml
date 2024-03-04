@@ -13,7 +13,7 @@ jobs:
 
     steps:
       - name: Current Filenames
-        run: ls
+        run: pwd
     
       - name: Generate environment variable file
         run: python3 convert_env.py
