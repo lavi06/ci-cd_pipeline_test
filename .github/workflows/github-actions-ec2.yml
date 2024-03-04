@@ -15,6 +15,9 @@ jobs:
       - name: Directory
         run: cd ..
 
+      - name: Directory
+        run: pwd
+
       - name: Current Filenames
         run: python3 -c "import os; print(os.listdir())"
     
