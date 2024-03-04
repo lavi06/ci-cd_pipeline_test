@@ -31,8 +31,5 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             touch ${{ vars.AWS_ACCESS_KEY_ID }}
-            export AWS_ACCESS_KEY_ID=${{ vars.AWS_ACCESS_KEY_ID }}
-            echo "export AWS_ACCESS_KEY_ID=${{ vars.AWS_ACCESS_KEY_ID }}" >> ~/.bashrc
-            export AWS_SECRET_ACCESS_KEY=${{ vars.AWS_SECRET_ACCESS_KEY }}
-            echo "export AWS_SECRET_ACCESS_KEY=${{ vars.AWS_SECRET_ACCESS_KEY }}" >> ~/.bashrc
             export check=Lavi
+            echo "export check=Lavi" >> ~/.bashrc
