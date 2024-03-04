@@ -13,7 +13,7 @@ jobs:
 
     steps:
       - name: Directory
-        run: pwd
+        run: cd ..
 
       - name: Current Filenames
         run: python3 -c "import os; print(os.listdir())"
