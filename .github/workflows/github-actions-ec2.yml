@@ -12,6 +12,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Generate environment variable file
+        run: python3 generate_env_vars.py
+
       - name: Checkout the files
         uses: actions/checkout@v2
 
@@ -22,6 +25,7 @@ jobs:
           REMOTE_HOST: ${{ secrets.HOST_DNS }}
           REMOTE_USER: ${{ secrets.USERNAME }}
           TARGET: ${{ secrets.TARGET_DIR }}
+
 
       - name: Executing remote ssh commands using ssh key
         uses: appleboy/ssh-action@master
